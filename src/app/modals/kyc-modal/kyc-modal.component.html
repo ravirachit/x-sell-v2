@@ -1,0 +1,27 @@
+<div class="modal-body" *ngIf="kycData.id == 1" id="kyc">
+    <div id="cancelModal" #cancelModal (click)='showStatus()'></div>
+    <div class="modal-section">
+        <iframe allow="camera" id='iframe' width="100%" height="100%" frameBorder="0" [src]="kycData.data"></iframe>
+    </div>
+</div>
+
+<div class="modal-body" *ngIf="kycData.id == 2" id="account">
+    <div id="cancelModalAccount" #cancelModalAccount (click)='showStatus()'></div>
+    <div class="modal-section">
+        <iframe allow="camera" id='iframe' width="100%" height="100%" frameBorder="0" [src]="kycData.data"></iframe>
+    </div>
+</div>
+
+<div class="modal-body" *ngIf="kycData.id == 3" id="eMandate">
+    <div id="cancelModaleMandate" #cancelModaleMandate (click)='showStatus()'></div>
+    <div class="modal-section">
+        <iframe class="emandateFrame" allow="camera" id='iframe' width="100%" height="100%" frameBorder="0" [src]="kycData.data"></iframe>
+    </div>
+</div>
+
+<div class="modal-body" *ngIf="kycData.id == 4" id="loanRestr">
+    <div id="cancelModalLR" #cancelModalLR (click)='showStatus()'><img class="closeModal" src="assets/images/closeModal.png" alt=""></div>
+    <div class="modal-section">
+        <iframe class="emandateFrame" allow="camera" id='iframe' width="100%" height="100%" frameBorder="0" [src]="kycData.data"></iframe>
+    </div>
+</div>

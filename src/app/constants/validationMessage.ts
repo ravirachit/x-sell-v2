@@ -1,0 +1,22 @@
+export const ValidationMessage={
+    formValidation :{
+        Name:'Name is required.',
+        mobile:'Mobile is required.',
+        dob:'Date of birth is required.',
+        pan:'PAN is required.',
+        gender:'Gender is required.',
+        email:'Email address is required.',
+        empType:'Employment type is required.',
+        companyName:'Company name is required.',
+        ownerShipType:'Ownership type is required.',
+        workExperience:'Work experience is required.',
+        periodType:'Period type is required.',
+        flatDetails:'Flat/Building details is required.',
+        area:'Area is required.',
+        landmark:'Landmark is required.',
+        postalCode:'Postal code is required.',
+        city:'City is required.',
+        state:'State is required.',
+        country:'Country is required.',
+    },
+  };

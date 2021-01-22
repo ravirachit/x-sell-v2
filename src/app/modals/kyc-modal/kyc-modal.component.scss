@@ -1,0 +1,74 @@
+.accountModal{
+  position: absolute;
+  top: 12vh;
+  left: 38%;
+  .modal-dialog{
+    width: 336px;
+    .modal-content{
+      height: 534px;
+      width: 333px;
+      background-color:white;
+      border:0px;
+      border-radius: 0;
+      iframe {
+        height: 535px;
+        width: 335px;
+        margin: -2px;
+      }
+      .loan_loader{
+        position: absolute;
+        left: 35%;
+        top: 35%;
+      }
+    }
+  }
+}
+.closeModal{
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  height: 30px;
+}
+@media (max-width: 360px){
+.accountModal{
+  .modal-dialog{
+  margin: 50px 10px;
+  }
+}
+}
+@media (min-width: 370px) and (max-width: 380px){
+.accountModal{
+  .modal-dialog{
+  margin: 70px 18px;
+  }
+}
+}
+@media (min-width: 380px) and (max-width: 420px){
+.accountModal{
+  .modal-dialog{
+  margin: 70px 35px;
+  }
+}
+}
+@media (min-width: 300px) and (max-width: 1100px){
+.accountModal{
+  .modal-dialog{
+      width: 341px;
+      .modal-content{
+          height: 539px;
+          width: 340px;
+          background-color:white;
+          border:0px;
+          .loan_loader{
+              position: absolute;
+              left: 35%;
+              top: 35%;
+          }
+          iframe {
+              height: 536px;
+              width: 337px;
+          }
+      }
+  }
+  }
+}

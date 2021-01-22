@@ -1,0 +1,156 @@
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-left: 4%;
+    }
+    
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: #14A1D9;
+      top: 0;
+      bottom: 0;
+      margin-left: -3px;
+    }
+    
+    /* timeLineMsg around content */
+    .timeLineMsg {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 63%;
+    }
+    .timeLineMsg-right {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+    }
+    
+    .btn{
+      button{
+        background-color: #14A1D9;
+        color: white;
+        outline: nonw;
+        border: none;
+        padding: 8px 19px;
+        font-size: 13px;
+        margin-left: 40px;
+        margin-top: -5px;
+      }
+    }
+    /* The circles on the timeline */
+    // .timeLineMsg::after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 25px;
+    //   height: 25px;
+    //   right: -17px;
+    //   background-color: white;
+    //   border: 4px solid #FF9F55;
+    //   top: 15px;
+    //   border-radius: 50%;
+    //   z-index: 1;
+    // }
+    
+    /* Place the timeLineMsg to the left */
+    .left {
+      float: right;
+      margin-top: 7px;
+      margin-bottom: 12px;
+    }
+   
+    /* Place the timeLineMsg to the right */
+    .right {
+      left: 0%;
+      margin-top: -7px;
+      margin-left: -45px;
+    }
+    .left-content{
+      margin-left: -45px;       
+      margin-top: 8px;
+      margin-bottom: -18px;
+    }
+    
+    /* Add arrows to the left timeLineMsg (pointing right) */
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 10px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid #AFE0F2;
+      border-width: 0px 0 12px 10px;
+      border-color: transparent transparent transparent #AFE0F2;
+    }
+    
+    /* Add arrows to the right timeLineMsg (pointing left) */
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 10px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid #D7DFEE;
+      border-width: 0px 10px 12px 0;
+      border-color: transparent #D7DFEE;
+    }
+    // .v-line::before{
+    //   content: " ";
+    //   height: 0;
+    //   position: absolute;
+    //   top: 64px;
+    //   width: 0;
+    //   z-index: 1;
+    //   left: 0px;
+    //   border: 2px solid #14A1D9;
+    //   border-width: 0px 0px 3px 40px;
+    //   border-color: #14A1D9;
+    // }
+    
+    /* Fix the circle for timeLineMsgs on the right side */
+    .right::after {
+      left: -16px;
+    }
+    
+    /* The actual content */
+    .content {
+      padding: 12px 15px 1px 15px;
+      background-color: #D7DFEE;
+      position: relative;
+      p{
+        color: #707070;
+        font-size: 15px;
+        font-weight: 200;
+      }
+    }
+    .errCol{
+      color: #e57373;
+      font-size: 12px;
+    }
+    .alt-content{
+      padding: 12px 15px 1px 15px;
+      position: relative;
+      background-color: #AFE0F2;
+      p{
+        color: #454A60;
+        font-size: 14px;
+        font-weight: 200;
+      }
+      .happy-sec{
+        display: flex;
+        text-align: center;
+        img{
+          height: 20px;
+          margin-right: 8px;
+      }
+    }
+  }
